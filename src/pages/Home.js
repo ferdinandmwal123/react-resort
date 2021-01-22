@@ -2,7 +2,8 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Bannner from '../components/Banner'
 import {Link} from 'react-router-dom'
-import Services from '../components/Services'
+import Services from '../components/Services';
+import FeaturedRooms from '../components/FeaturedRooms';
 export default function Home() {
     return <>
     <Hero>
@@ -13,6 +14,7 @@ export default function Home() {
         </Bannner>
     </Hero>
     <Services />
+    <FeaturedRooms />
     </>;
     
     
