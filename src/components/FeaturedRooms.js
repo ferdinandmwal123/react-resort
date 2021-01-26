@@ -7,7 +7,7 @@ export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
   render() {
     const { loading, featuredRooms: rooms } = this.context;
-    rooms = rooms;
+    
 
     return (
       <div>
