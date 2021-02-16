@@ -41,6 +41,7 @@ export default class SingleRoom extends Component {
       pets,
       images,
     } = room;
+    const [mainImg,...defaultImg] = images;
     return (
       <>
       <StyledHero img={images[0] || this.state.defaultBcg}>
