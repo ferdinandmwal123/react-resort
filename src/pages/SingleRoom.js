@@ -75,7 +75,7 @@ export default class SingleRoom extends Component {
           </div>
         </section>
         <section className="room-extras">
-          
+          <h6>extras</h6>
         </section>
       </>
     );
