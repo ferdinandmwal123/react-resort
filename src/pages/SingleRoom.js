@@ -74,6 +74,9 @@ export default class SingleRoom extends Component {
             </article>
           </div>
         </section>
+        <section className="room-extras">
+          
+        </section>
       </>
     );
   }
