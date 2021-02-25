@@ -7,14 +7,16 @@ import Loading from "./Loading";
 export default function RoomContainer() {
   return (
     <RoomConsumer>
-      {
-      (value) => {
-        const {loading, sortedRooms, rooms } = value; 
+      {(value) => {
+        const { loading, sortedRooms, rooms } = value;
+        if (loading) {
+          return <Loading />;
+        }
         return (
           <div>
             Hello from RoomsContainer
-            <RoomsFilter rooms={rooms}/>
-            <RoomList rooms={sortedRooms}/>
+            <RoomsFilter rooms={rooms} />
+            <RoomList rooms={sortedRooms} />
           </div>
         );
       }}
