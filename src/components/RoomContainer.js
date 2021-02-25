@@ -9,12 +9,12 @@ export default function RoomContainer() {
     <RoomConsumer>
       {
       (value) => {
-        const {}
+        const {loading, sortedRooms, rooms } = value; 
         return (
           <div>
             Hello from RoomsContainer
-            <RoomsFilter />
-            <RoomList />
+            <RoomsFilter rooms={rooms}/>
+            <RoomList rooms={sortedRooms}/>
           </div>
         );
       }}
