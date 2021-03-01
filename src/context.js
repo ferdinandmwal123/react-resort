@@ -23,6 +23,14 @@ class RoomProvider extends Component {
       sortedRooms: rooms,
       loading: false,
       type:'all',
+      capacity:1,
+      price:0,
+      minPrice:0,
+      maxPrice:0,
+      minSize:0,
+      maxSize:0,
+      breakfast:false,
+      pets:false
     });
   }
 
