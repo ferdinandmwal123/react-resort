@@ -34,7 +34,8 @@ class RoomProvider extends Component {
       sortedRooms: rooms,
       loading: false,
       price:maxPrice,
-      
+      maxPrice,
+      maxSize
     });
   }
 
@@ -54,6 +55,9 @@ class RoomProvider extends Component {
     const room = tempRooms.find((room) => room.slug === slug);
     return room;
   };
+  handleChange = event =>{
+    
+  }
 
   render() {
     return (
