@@ -22,6 +22,7 @@ class RoomProvider extends Component {
       featuredRooms,
       sortedRooms: rooms,
       loading: false,
+      type:'all',
     });
   }
 
