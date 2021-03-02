@@ -4,5 +4,17 @@ import { RoomContext } from "../context";
 import Title from "../components/Title";
 export default function RoomFilter() {
   const context = useContext(RoomContext);
-  return <div>hello room filter</div>;
+  const {
+    handleChange,
+    type,
+    capacity,
+    price,
+    minPrice,
+    maxPrice,
+    minSize,
+    maxSize,
+    breakfast,
+    pets,
+  } = context;
+  return <section className="filter-container">hello room filter</section>;
 }
