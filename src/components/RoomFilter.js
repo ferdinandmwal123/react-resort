@@ -16,5 +16,12 @@ export default function RoomFilter() {
     breakfast,
     pets,
   } = context;
-  return <section className="filter-container">hello room filter</section>;
+  return (
+    <section className="filter-container">
+      <Title title="search-rooms" />
+      <form className="filter-form">
+        
+      </form>
+    </section>
+  );
 }
