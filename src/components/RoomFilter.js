@@ -20,7 +20,12 @@ export default function RoomFilter() {
     <section className="filter-container">
       <Title title="search-rooms" />
       <form className="filter-form">
-        
+        {/*select type */}
+        <div className="from-group">
+          <label htmlFor="type">room type</label>
+          <select name="type" id="type"></select>
+        </div>
+        {/*end select type */}
       </form>
     </section>
   );
