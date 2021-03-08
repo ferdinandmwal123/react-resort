@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "../components/Title";
-export default function RoomFilter() {
+export default function RoomFilter({rooms}) {
   const context = useContext(RoomContext);
   const {
     handleChange,
@@ -29,7 +29,9 @@ export default function RoomFilter() {
             value={type}
             className="form-control"
             onChange={handleChange}
-          ></select>
+          >
+
+          </select>
         </div>
         {/*end select type */}
       </form>
