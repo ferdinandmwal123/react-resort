@@ -25,6 +25,9 @@ export default function RoomFilter({ rooms }) {
   //add all
   types = ['all',...types];
   //map to jsx
+  types = types.map((item,index) =>{
+    return <option value={item} key={index}>{item}</option>
+  })
   return (
     <section className="filter-container">
       <Title title="search-rooms" />
@@ -39,7 +42,7 @@ export default function RoomFilter({ rooms }) {
             className="form-control"
             onChange={handleChange}
           >
-            {}
+            {types}
           </select>
         </div>
         {/*end select type */}
