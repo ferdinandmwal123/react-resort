@@ -60,15 +60,22 @@ class RoomProvider extends Component {
     const type = event.target.type;
     const name = event.target.name;
     const value = event.target.value;
+    console.log(`this is ${type}, this is ${name}, this is${value}`);
   };
 
   filterRooms = () => {
     console.log("hello");
-  }
+  };
 
   render() {
     return (
-      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom, handleChange: this.handleChange }}>
+      <RoomContext.Provider
+        value={{
+          ...this.state,
+          getRoom: this.getRoom,
+          handleChange: this.handleChange,
+        }}
+      >
         {this.props.children}
       </RoomContext.Provider>
     );
