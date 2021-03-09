@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "../components/Title";
 //get all unique values
-const getUnique = (items,value) =>{
-  
-}
-export default function RoomFilter({rooms}) {
+const getUnique = (items, value) => {
+  return [...new Set(items.map((item) => item[value]))];
+};
+export default function RoomFilter({ rooms }) {
   const context = useContext(RoomContext);
   const {
     handleChange,
@@ -20,6 +20,7 @@ export default function RoomFilter({rooms}) {
     breakfast,
     pets,
   } = context;
+  let types = getUnique(rooms, 'type');
   return (
     <section className="filter-container">
       <Title title="search-rooms" />
@@ -33,9 +34,7 @@ export default function RoomFilter({rooms}) {
             value={type}
             className="form-control"
             onChange={handleChange}
-          >
-
-          </select>
+          ></select>
         </div>
         {/*end select type */}
       </form>
