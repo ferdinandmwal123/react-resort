@@ -2,6 +2,10 @@ import React from "react";
 import { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "../components/Title";
+//get all unique values
+const getUnique = (items,value) =>{
+  
+}
 export default function RoomFilter({rooms}) {
   const context = useContext(RoomContext);
   const {
