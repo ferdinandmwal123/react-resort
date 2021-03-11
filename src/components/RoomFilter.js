@@ -32,6 +32,7 @@ export default function RoomFilter({ rooms }) {
       </option>
     );
   });
+  let people =  getUnique(rooms,'capacity');
   return (
     <section className="filter-container">
       <Title title="search-rooms" />
