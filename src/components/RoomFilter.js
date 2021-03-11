@@ -68,7 +68,7 @@ export default function RoomFilter({ rooms }) {
             className="form-control"
             onChange={handleChange}
           >
-            {types}
+            {people}
           </select>
         </div>
         {/*end guest */}
