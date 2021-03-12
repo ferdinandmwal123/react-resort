@@ -72,6 +72,10 @@ export default function RoomFilter({ rooms }) {
           </select>
         </div>
         {/*end guest */}
+        {/*room price */}
+        <div className="form-group">
+          <label htmlFor="price"></label>
+        </div>
       </form>
     </section>
   );
