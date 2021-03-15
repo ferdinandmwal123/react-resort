@@ -87,6 +87,11 @@ export default function RoomFilter({ rooms }) {
           />
         </div>
         {/* end of room price*/}
+        {/*size */}
+        <div className="form-group">
+
+        </div>
+        {/*end of size */}
       </form>
     </section>
   );
