@@ -72,7 +72,7 @@ export default function RoomFilter({ rooms }) {
           </select>
         </div>
         {/*end guest */}
-        {/*room price */}
+        {/* room price */}
         <div className="form-group">
           <label htmlFor="price">room price ${price}</label>
           <input
@@ -86,6 +86,7 @@ export default function RoomFilter({ rooms }) {
             className="form-control"
           />
         </div>
+        {/* end of room price*/}
       </form>
     </section>
   );
