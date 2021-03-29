@@ -26,7 +26,7 @@ class RoomProvider extends Component {
       let response = await Client.getEntries({
         content_type: "beachResortRoom",
       });
-      console.log()
+      console.log(response);
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
       let maxPrice = Math.max(...rooms.map((item) => item.price));
