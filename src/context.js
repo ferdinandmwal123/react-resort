@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import items from "./data";
-import Client from './contentful';
+import Client from "./contentful";
 
 Client.getEntries({
-  content_type:"beachResortRoom"
-}).then(response => console.log(response.items));
+  content_type: "beachResortRoom",
+}).then((response) => console.log(response.items));
 
 const RoomContext = React.createContext();
 //*<RoomContext.Provider value={}
@@ -26,6 +26,12 @@ class RoomProvider extends Component {
     pets: false,
   };
   //getData
+  getData = async () => {
+    try {
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   componentDidMount() {
     let rooms = this.formatData(items);
